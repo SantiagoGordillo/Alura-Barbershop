@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = "UTF-8">
+        <title> Contact - Alura Barbershop </title>
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href ="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id = "box">
+
+                <h1><img src="imagenes/logo.png" alt = "Alura Barbershop logo"></h1>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href = "home.html">Home</a></li>
+                        <li><a href = "products.html">Products</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <form>
+
+                <div>
+
+                    <label for = "nameAndLastname"> Name and Lastname </label>
+                    <input type = "text" id = "nameAndLastname" class = "dataClient" required>
+
+                    <label for = "mail"> Mail </label>
+                    <input type = "email" id = "mail" class = "dataClient" required placeholder = "name@domain.com">
+
+                    <label for = "phone"> Cellphone </label>
+                    <input type = "tel" id = "phone" class = "dataClient" required placeholder = "XXX - XXXXXXX">
+                        
+                    <label for = "mesagge"> Mesagge </label>
+                    <textarea rows = "10" id = "mesagge" class = "dataClient"></textarea>
+
+                </div>
+
+                <fieldset>
+
+                    <legend> What form of contact do you prefer? </legend>
+
+                    <label for = "radio-mail"><input type = "radio" value = "mail" name = "contacto" id = "radio-mail"> Mail </label>
+                    
+                    <label for = "radio-phone"><input type = "radio" value = "phone" name = "contacto" id = "radio-phone"> Phone </label>
+
+                    <label for = "radio-whatsapp"><input type = "radio" value = "whatsApp" name = "contacto" id = "radio-whatsapp" checked> WhatsApp </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend> What time do you prefer? </legend>
+
+                    <select>
+
+                        <option> Morning </option>
+                        <option> Afternoon </option>
+                        <option> Evening </option>
+
+                    </select>
+
+                </fieldset>
+
+                <label id = "checkbox"> would you like to receive news? <input type="checkbox" checked></label>
+
+                <input type="submit" value = "Send form" id = "send">
+            
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th> Day </th>
+    
+                        <th> Horary </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> Monday </td>
+
+                        <td> 08hs ~ 20hs </td>
+                    </tr>
+
+                    <tr>
+                        <td> Wednesday </td>
+
+                        <td> 08hs ~ 20hs </td>
+                    </tr>
+
+                    <tr>
+                        <td> Friday </td>
+
+                        <td> 08hs ~ 20hs </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+
+        <footer>
+
+            <img src = "imagenes/logo-blanco.png" alt = "Alura Barbershop logo">
+            <p id = "copyright"> &copy Copyright Alura Barbershop - 2023 </p>
+
+        </footer>
+
+    </body>
+
+</html>

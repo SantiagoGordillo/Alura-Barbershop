@@ -1,0 +1,313 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    background-color: #CCCCCC;
+    padding: 20px 0;
+}
+
+#box
+{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav
+{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a
+{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #c78c19;
+}
+
+#product
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#product li
+{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: black solid 3px;
+    border-radius: 30px;
+}
+
+#product li:hover
+{
+    border-color: #c78c19;
+}
+
+#product li:active
+{
+    border-color: green;
+}
+
+#product h1
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#product li:hover h1
+{
+    font-size: 33px;
+}
+
+.descript
+{
+    font-size: 18px;
+}
+
+.price
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#send
+{
+    width: 40%;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#send:hover
+{
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+footer
+{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+#copyright
+{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form
+{
+    margin: 40px 0;
+}
+
+form label, form legend
+{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.dataClient
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#checkbox
+{
+    margin: 20px 0;
+}
+
+table
+{
+    margin: 40px 40px;
+}
+
+thead
+{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th
+{
+    border: 1px solid #000000;
+    padding: 7px 12px;
+}
+
+/* CSS - HOME */
+
+.banner
+{
+    width: 100%;
+}
+
+.main
+{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.utensils
+{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.main-title
+{
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0px 1.5em;
+    clear: left;
+}
+
+.main p
+{
+    margin: 0.5em 0px 1.5em;
+}
+
+.main strong
+{
+    font-weight: bold;
+}
+
+.main strong
+{
+    font-style: italic;
+}
+
+.content-map
+{
+    text-align: center;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.content-map p
+{
+    padding: 0 0 0.5em;
+    text-align: center;
+}
+
+.map
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.differentials
+{
+    padding: 3px 0;
+    background: #888888;
+}
+
+.differentials-content
+{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.differentials-list
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items
+{
+    line-height: 1.5;
+}
+
+.items:before
+{
+    content: "◐";
+}
+
+.items:first-child
+{
+    font-weight: bold;
+}
+
+.differentials-image
+{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 8px -8px 13px 2px #000000;
+}
+
+.differentials-image:hover
+{
+    opacity: 30%;
+}
+
+.video
+{
+    width: 560px;
+    margin: 1em auto;;
+}
+
+@media screen and (max-width:480px) 
+{
+    h1
+    {
+        text-align: center;
+    }
+
+    nav
+    {
+        position: static;
+    }
+
+    #box, .main, .map, .differentials-content, .video
+    {
+        width: auto;
+    }
+
+    .differentials-list, .differentials-image
+    {
+        width: 100%;
+        box-shadow: none;
+    }
+}
