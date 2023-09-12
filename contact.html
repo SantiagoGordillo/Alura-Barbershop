@@ -48,10 +48,12 @@
                     <input type = "email" id = "mail" class = "dataClient" required placeholder = "nombre@dominio.com">
 
                     <label for = "phone"> Celular </label>
-                    <input type = "tel" id = "phone" class = "dataClient" required placeholder = "XXX - XXXXXXX">
+                    <input type = "tel" pattern = "[0-9]{10}" id = "phone" class = "dataClient" required placeholder = "xxxxxxxxxx">
                         
                     <label for = "mesagge"> Mensaje </label>
                     <textarea rows = "10" id = "mesagge" class = "dataClient"></textarea>
+
+                    <label ></label>
 
                 </div>
 
@@ -73,9 +75,9 @@
 
                     <select>
 
-                        <option> Morning </option>
-                        <option> Afternoon </option>
-                        <option> Evening </option>
+                        <option> Mañana </option>
+                        <option> Tarde </option>
+                        <option> Noche </option>
 
                     </select>
 
