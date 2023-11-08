@@ -5,9 +5,11 @@
     <head>
 
         <meta charset = "UTF-8">
-        <title> Contact - Alura Barbershop </title>
+        <meta name = "viewport" content = "width = device-width">
+        <title> Contacto - Bareberia  Alura </title>
         <link rel = "stylesheet" href = "reset.css">
-        <link rel = "stylesheet" href ="style.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     </head>
 
@@ -17,15 +19,15 @@
 
             <div id = "box">
 
-                <h1><img src="imagenes/logo.png" alt = "Alura Barbershop logo"></h1>
+                <h1><img src="imagenes/logo.png" alt = "Barberia Alura logo"></h1>
 
                 <nav>
 
                     <ul>
 
-                        <li><a href = "home.html">Home</a></li>
-                        <li><a href = "products.html">Products</a></li>
-                        <li><a href = "contact.html">Contact</a></li>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "products.html">Productos</a></li>
+                        <li><a href = "contact.html">Contacto</a></li>
 
                     </ul>
 
@@ -41,17 +43,17 @@
 
                 <div>
 
-                    <label for = "nameAndLastname"> Nombre y Apellido </label>
-                    <input type = "text" id = "nameAndLastname" class = "dataClient" required>
+                    <label for = "nombreyApellido"> Nombre y Apellido </label>
+                    <input name = "nombreyApellido" type = "text" id = "nameAndLastname" class = "dataClient" required>
 
                     <label for = "mail"> Mail </label>
-                    <input type = "email" id = "mail" class = "dataClient" required placeholder = "nombre@dominio.com">
+                    <input name = "mail" type = "email" id = "mail" class = "dataClient" required placeholder = "nombre@dominio.com">
 
-                    <label for = "phone"> Celular </label>
-                    <input type = "tel" pattern = "[0-9]{10}" id = "phone" class = "dataClient" required placeholder = "xxxxxxxxxx">
+                    <label for = "telefono"> Celular </label>
+                    <input name = "telefono" type = "tel" pattern = "[0-9]{10}" id = "phone" class = "dataClient" required placeholder = "xxxxxxxxxx">
                         
-                    <label for = "mesagge"> Mensaje </label>
-                    <textarea rows = "10" id = "mesagge" class = "dataClient"></textarea>
+                    <label for = "mensaje"> Mensaje </label>
+                    <textarea name = "mensaje" rows = "10" id = "mesagge" class = "dataClient"></textarea>
 
                     <label ></label>
 
@@ -63,7 +65,7 @@
 
                     <label for = "radio-mail"><input type = "radio" value = "mail" name = "contacto" id = "radio-mail"> Mail </label>
                     
-                    <label for = "radio-phone"><input type = "radio" value = "phone" name = "contacto" id = "radio-phone"> Phone </label>
+                    <label for = "radio-telefono"><input type = "radio" value = "telefono" name = "contacto" id = "radio-phone"> Telefono </label>
 
                     <label for = "radio-whatsapp"><input type = "radio" value = "whatsApp" name = "contacto" id = "radio-whatsapp" checked> WhatsApp </label>
 
@@ -83,18 +85,16 @@
 
                 </fieldset>
 
-                <label id = "checkbox"> Te gustaria recibir novedades? <input type="checkbox" checked></label>
+                <label id = "checkbox"> ¿Te gustaria recibir novedades? <input type="checkbox" checked></label>
 
                 <input type="submit" value = "Enviar" id = "send">
             
             </form>
 
             <table>
-
                 <thead>
                     <tr>
                         <th> Dia </th>
-    
                         <th> Hora </th>
                     </tr>
                 </thead>
@@ -102,30 +102,26 @@
                 <tbody>
                     <tr>
                         <td> Lunes </td>
-
                         <td> 08hs ~ 20hs </td>
                     </tr>
 
                     <tr>
                         <td> Miercoles </td>
-
                         <td> 08hs ~ 20hs </td>
                     </tr>
 
                     <tr>
                         <td> Viernes </td>
-
                         <td> 08hs ~ 20hs </td>
                     </tr>
                 </tbody>
-
             </table>
 
         </main>
 
         <footer>
 
-            <img src = "imagenes/logo-blanco.png" alt = "Alura Barbershop logo">
+            <img src = "imagenes/logo-blanco.png" alt = "Barberia Alura logo">
             <p id = "copyright"> &copy Copyright Alura Barbershop - 2023 </p>
 
         </footer>
