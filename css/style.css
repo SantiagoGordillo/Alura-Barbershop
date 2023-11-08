@@ -1,7 +1,11 @@
+/* body */
+
 body
 {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* header */
 
 header
 {
@@ -9,7 +13,7 @@ header
     padding: 20px 0;
 }
 
-#box
+.header
 {
     width: 940px;
     position: relative;
@@ -43,14 +47,16 @@ nav a:hover
     color: #c78c19;
 }
 
-#product
+/* productos */
+
+.productos
 {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
 
-#product li
+.productos li
 {
     display: inline-block;
     text-align: center;
@@ -63,25 +69,20 @@ nav a:hover
     border-radius: 30px;
 }
 
-#product li:hover
+.productos li:hover
 {
     border-color: #c78c19;
 }
 
-#product li:active
+.productos li:active
 {
     border-color: green;
 }
 
-#product h1
+.productos h1
 {
     font-size: 30px;
     font-weight: bold;
-}
-
-#product li:hover h1
-{
-    font-size: 33px;
 }
 
 .descript
@@ -96,39 +97,7 @@ nav a:hover
     margin-top: 10px;
 }
 
-#send
-{
-    width: 40%;
-    padding: 15px 0px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background: orange;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-#send:hover
-{
-    background: darkorange;
-    transform: scale(1.05);
-}
-
-footer
-{
-    text-align: center;
-    background: url(imagenes/bg.jpg);
-    padding: 40px;
-}
-
-#copyright
-{
-    color: white;
-    font-size: 13px;
-    margin: 20px;
-}
+/* formulario */
 
 form
 {
@@ -150,10 +119,34 @@ form label, form legend
     width: 50%;
 }
 
-#checkbox
+.checkbox
 {
     margin: 20px 0;
 }
+
+/* boton enviar */
+
+.send
+{
+    width: 40%;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.send:hover
+{
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+/* horarios */
 
 table
 {
@@ -173,12 +166,7 @@ td,th
     padding: 7px 12px;
 }
 
-/* CSS - HOME */
-
-.banner
-{
-    width: 100%;
-}
+/* home */
 
 .main
 {
@@ -188,11 +176,9 @@ td,th
     margin: 0 auto;
 }
 
-.utensils
+.banner
 {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
+    width: 100%;
 }
 
 .main-title
@@ -203,6 +189,13 @@ td,th
     clear: left;
 }
 
+.utensils
+{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
 .main p
 {
     margin: 0.5em 0px 1.5em;
@@ -211,10 +204,6 @@ td,th
 .main strong
 {
     font-weight: bold;
-}
-
-.main strong
-{
     font-style: italic;
 }
 
@@ -265,11 +254,6 @@ td,th
     content: "◐";
 }
 
-.items:first-child
-{
-    font-weight: bold;
-}
-
 .differentials-image
 {
     width: 60%;
@@ -288,6 +272,24 @@ td,th
     margin: 1em auto;;
 }
 
+/* footer */
+
+footer
+{
+    text-align: center;
+    background: url(/resources/imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright
+{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* responsividad */
+
 @media screen and (max-width:480px) 
 {
     h1
@@ -300,7 +302,7 @@ td,th
         position: static;
     }
 
-    #box, .main, .map, .differentials-content, .video
+    .header, .main, .map, .differentials-content, .video
     {
         width: auto;
     }
