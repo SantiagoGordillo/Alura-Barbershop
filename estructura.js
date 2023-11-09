@@ -4,7 +4,7 @@ const productos = {
             servicio: 1,
             nombre: "Cabello",
             imagen: "resources/imagenes/cabello.jpg",
-            descripcion: "Con tijeras o maquina a gusto del cliente",
+            descripcion: "Con tijeras o maquina a eleccion",
             precio: "10.00"
         },
         {

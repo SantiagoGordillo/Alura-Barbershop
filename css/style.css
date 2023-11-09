@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* body */
 
 body
@@ -56,9 +60,15 @@ nav a:hover
     padding: 50px;
 }
 
+.productos img
+{
+    width: 100%;
+}
+
 .productos li
 {
     display: inline-block;
+    min-height: 440px;
     text-align: center;
     width: 30%;
     vertical-align: top;
@@ -101,7 +111,11 @@ nav a:hover
 
 form
 {
-    margin: 40px 0;
+    margin: 40px 20% 40px 20%;
+}
+
+.informacion
+{
 }
 
 form label, form legend
@@ -116,7 +130,7 @@ form label, form legend
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .checkbox
@@ -128,8 +142,9 @@ form label, form legend
 
 .enviar
 {
-    width: 40%;
+    width: 50%;
     padding: 15px 0px;
+    margin: 0 25% 0 25%;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -146,39 +161,24 @@ form label, form legend
     transform: scale(1.05);
 }
 
-/* horarios */
-
-table
-{
-    margin: 40px 40px;
-}
-
-thead
-{
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
-
-th, td
-{
-    border: 1px solid #000000;
-    padding: 7px 12px;
-}
-
 /* home */
 
 .main
 {
-    padding: 3em 0;
     background: #fefefe;
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .banner
 {
     width: 100%;
+}
+
+.descripcion
+{
+    width: 60%;
+    margin: 0 auto;
 }
 
 .titulo-principal
@@ -290,8 +290,25 @@ footer
 
 /* responsividad */
 
-@media screen and (max-width:480px) 
+@media screen and (max-width:480px)
 {
+    .productos {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-content: flex-start;
+        gap: 10px;
+    }
+    .productos li {
+        width: 100%;
+    }
+
+    .enviar{
+        width: 75%;
+        margin: 0 12.5% 0 12.5%;
+    }
+
     h1
     {
         text-align: center;
