@@ -5,44 +5,23 @@ const productos = {
             nombre: "Cabello",
             imagen: "resources/imagenes/cabello.jpg",
             descripcion: "Con tijeras o maquina a gusto del cliente",
-            precio: 10.00
+            precio: "10.00"
         },
         {
             servicio: 2,
             nombre: "Barba",
             imagen: "resources/imagenes/barba.jpg",
             descripcion: "Corte y diseño profecional de barba",
-            precio: 8.00
+            precio: "8.00"
         },
         {
             servicio: 3,
             nombre: "Cabello + Barba",
             imagen: "resources/imagenes/cabello+barba.jpg",
             descripcion: "Servicio completo de cabello y barba",
-            precio: 15.00
+            precio: "15.00"
         }
     ]
 }
 
-// export default productos
-
-const app = document.getElementById("app")
-
-let renderizadoHTML = `<ul class = "productos">`
-
-productos.servicios.forEach(
-    (servicio)=>{
-        renderizadoHTML += `
-
-        <li>
-            <h1> ${servicio.nombre} </h1>
-                <img src = "${servicio.imagen}">
-                <p class = "descripcion"> ${servicio.descripcion} </p>
-                <p class = "precio"> $ ${servicio.precio} </p>
-            </li>`
-    }
-)
-
-renderizadoHTML += `</ul>`
-
-app.innerHTML = renderizadoHTML
+export default productos;
