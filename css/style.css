@@ -85,12 +85,12 @@ nav a:hover
     font-weight: bold;
 }
 
-.descript
+.descripcion
 {
     font-size: 18px;
 }
 
-.price
+.precio
 {
     font-size: 20px;
     font-weight: bold;
@@ -111,7 +111,7 @@ form label, form legend
     margin: 0 0 10px;
 }
 
-.dataClient
+.datos-cliente
 {
     display: block;
     margin: 0 0 20px;
@@ -126,7 +126,7 @@ form label, form legend
 
 /* boton enviar */
 
-.send
+.enviar
 {
     width: 40%;
     padding: 15px 0px;
@@ -140,7 +140,7 @@ form label, form legend
     cursor: pointer;
 }
 
-.send:hover
+.enviar:hover
 {
     background: darkorange;
     transform: scale(1.05);
@@ -160,7 +160,7 @@ thead
     font-weight: bold;
 }
 
-td,th
+th, td
 {
     border: 1px solid #000000;
     padding: 7px 12px;
@@ -181,7 +181,7 @@ td,th
     width: 100%;
 }
 
-.main-title
+.titulo-principal
 {
     text-align: center;
     font-size: 2em;
@@ -189,7 +189,7 @@ td,th
     clear: left;
 }
 
-.utensils
+.herramientas
 {
     width: 120px;
     float: left;
@@ -207,37 +207,37 @@ td,th
     font-style: italic;
 }
 
-.content-map
+.contenedor-mapa
 {
     text-align: center;
     background: linear-gradient(#fefefe,#888888);
 }
 
-.content-map p
+.contenedor-mapa p
 {
     padding: 0 0 0.5em;
     text-align: center;
 }
 
-.map
+.mapa
 {
     width: 940px;
     margin: 0 auto;
 }
 
-.differentials
+.diferenciales
 {
     padding: 3px 0;
     background: #888888;
 }
 
-.differentials-content
+.contenedor-diferenciales
 {
     width: 640px;
     margin: 0 auto;
 }
 
-.differentials-list
+.lista-diferenciales
 {
     width: 40%;
     display: inline-block;
@@ -254,14 +254,14 @@ td,th
     content: "◐";
 }
 
-.differentials-image
+.imagen-diferenciales
 {
     width: 60%;
     transition: 400ms;
     box-shadow: 8px -8px 13px 2px #000000;
 }
 
-.differentials-image:hover
+.imagen-diferenciales:hover
 {
     opacity: 30%;
 }
@@ -302,12 +302,12 @@ footer
         position: static;
     }
 
-    .header, .main, .map, .differentials-content, .video
+    .header, .main, .mapa, .contenedor-diferenciales, .video
     {
         width: auto;
     }
 
-    .differentials-list, .differentials-image
+    .lista-diferenciales, .imagen-diferenciales
     {
         width: 100%;
         box-shadow: none;
