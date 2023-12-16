@@ -1,6 +1,4 @@
-import productos from './estructura.js';
-
-console.log(productos)
+import productos from '/javascript/estructura.js';
 
 const app = document.getElementById("app")
 
